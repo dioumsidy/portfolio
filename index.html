@@ -1,0 +1,130 @@
+<!Doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper active-nav-link">
+                    <a href="index.html">Home</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="about.html">About</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="login.html">Login</a>
+                </div>
+            </div>
+
+            <div class="right-side">
+                <div class="brand">
+                    <div>TravelInfo</div>
+                        <div class= "slogan">
+                            Travel more, stress less.
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-wrapper">
+            <div class="portfolio-items-wrapper">
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image: url(images/france.jpg);"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">
+                            <a href="https://onthegrid.city/paris">
+                            Explore France
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image: url(images/mexico.jpg);"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">
+                            <a href="https://onthegrid.city/mexico-city">
+                            Explore Mexico
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image: url(images/england.jpg);"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">
+                            <a href="https://onthegrid.city/london">
+                            Explore England
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image: url(images/china.jpg);"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">
+                            <a href="https://onthegrid.city/hong-kong">
+                            Explore China
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image: url(images/south-africa.jpg);"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">
+                            <a href="https://onthegrid.city/cape-town">
+                            Explore South-Africa
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image: url(images/canada.jpg);"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">
+                            <a href="https://onthegrid.city/toronto">
+                            Explore Canada
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+            portfolioItem.childNodes[1].classList.add('img-darken');
+        })
+
+        portfolioItem.addEventListener('mouseout', () => {
+            portfolioItem.childNodes[1].classList.remove('img-darken');
+        })
+    })
+</script>
+</html>
